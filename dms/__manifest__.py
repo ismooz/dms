@@ -5,7 +5,7 @@
 {
     "name": "Document Management System",
     "summary": """Document Management System for Odoo""",
-    "version": "18.0.1.0.6",
+    "version": "19.0.1.0.6",
     "category": "Document Management",
     "license": "LGPL-3",
     "website": "https://github.com/OCA/dms",
@@ -13,7 +13,6 @@
     "depends": [
         "mail",
         "http_routing",
-        "onboarding",
         "portal",
         "base",
         "web",
@@ -26,8 +25,6 @@
         "actions/file.xml",
         # Templates
         "template/portal.xml",
-        # Data
-        "data/onboarding_data.xml",
         # Views
         "views/dms_tag.xml",
         "views/dms_category.xml",

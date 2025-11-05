@@ -11,8 +11,6 @@ from . import storage
 from . import directory
 from . import dms_file
 
-from . import onboarding_onboarding
-from . import onboarding_onboarding_step
 from . import dms_category
 from . import tag
 
