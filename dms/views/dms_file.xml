@@ -92,7 +92,6 @@
             <kanban
                 js_class="file_kanban"
                 class="mk_file_kanban_view o_kanban_small_column o_kanban_mobile"
-                banner_route="/onboarding/document_onboarding_file"
                 highlight_color="color"
             >
                 <field name="id" />
@@ -591,38 +590,6 @@
                 Files are used to save content directly in Odoo.
             </p>
         </field>
-    </record>
-    <record id="view_dms_file_new_form" model="ir.ui.view">
-        <field name="name">dms_file.form</field>
-        <field name="model">dms.file</field>
-        <field name="inherit_id" ref="view_dms_file_form" />
-        <field name="mode">primary</field>
-        <field name="arch" type="xml">
-            <xpath expr="//header" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//sheet//div[hasclass('oe_button_box')]" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <form position="inside">
-                <footer>
-                    <button
-                        class="btn btn-primary"
-                        type="object"
-                        string="Create"
-                        name="action_save_onboarding_file_step"
-                    />
-                    <button special="cancel" string="Cancel" />
-                </footer>
-            </form>
-        </field>
-    </record>
-    <record id="action_dms_file_new" model="ir.actions.act_window">
-        <field name="name">New Root Directory</field>
-        <field name="res_model">dms.file</field>
-        <field name="view_mode">form</field>
-        <field name="target">new</field>
-        <field name="view_id" ref="view_dms_file_new_form" />
     </record>
     <record id="action_wizard_dms_file_move" model="ir.actions.server">
         <field name="name">Move</field>

@@ -481,14 +481,6 @@ msgid "Base"
 msgstr "Base/Fuente"
 
 #. module: dms
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
-#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
-msgid "Cancel"
-msgstr "Cancelar"
-
-#. module: dms
 #: model:ir.actions.act_window,name:dms.action_dms_category
 #: model:ir.ui.menu,name:dms.menu_dms_category
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
@@ -552,14 +544,6 @@ msgstr "Click para añadir un nuevo archivo."
 #: model_terms:ir.actions.act_window,help:dms.action_dms_tag
 msgid "Click to create a new tag."
 msgstr "Click para crear una nueva etiqueta."
-
-#. module: dms
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__closed
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__closed
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__closed
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__closed
-msgid "Closed"
-msgstr "Cerrado"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__color
@@ -694,13 +678,6 @@ msgid "Count Users"
 msgstr "Conteo de usuarios"
 
 #. module: dms
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
-msgid "Create"
-msgstr "Crear"
-
-#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_create
 #: model:ir.model.fields,field_description:dms.field_dms_directory__permission_create
 #: model:ir.model.fields,field_description:dms.field_dms_file__permission_create
@@ -709,29 +686,9 @@ msgid "Create Access"
 msgstr "Acceso de creación"
 
 #. module: dms
-#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_create_directory
-msgid "Create Directory"
-msgstr "Crear carpeta"
-
-#. module: dms
-#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_document_storage
-msgid "Create Storage"
-msgstr "Crear almacenamiento"
-
-#. module: dms
 #: model_terms:ir.actions.act_window,help:dms.action_dms_category
 msgid "Create a new Category."
 msgstr "Crear una nueva categoría."
-
-#. module: dms
-#: model:onboarding.onboarding.step,description:dms.onboarding_step_document_storage
-msgid "Create a new Document Storage."
-msgstr "Crear un nuevo documento de almacenamiento."
-
-#. module: dms
-#: model:onboarding.onboarding.step,description:dms.onboarding_step_create_directory
-msgid "Create a new Root Directory."
-msgstr "Crear una nueva carpeta raíz."
 
 #. module: dms
 #: model_terms:ir.actions.act_window,help:dms.action_dms_storage
@@ -884,14 +841,6 @@ msgstr ""
 "                 archivos directamente en Odoo."
 
 #. module: dms
-#: model:ir.model,name:dms.model_dms_directory
-#: model:ir.model.fields,field_description:dms.field_dms_file__directory_id
-#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__directory_id
-#: model:onboarding.onboarding.step,title:dms.onboarding_step_create_directory
-msgid "Directory"
-msgstr "Carpeta"
-
-#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_access_group__display_name
 #: model:ir.model.fields,field_description:dms.field_dms_category__display_name
 #: model:ir.model.fields,field_description:dms.field_dms_directory__display_name
@@ -915,11 +864,6 @@ msgid "Document Category"
 msgstr "Categoría del documento"
 
 #. module: dms
-#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_document_storage
-msgid "Document Storage Created!"
-msgstr ""
-
-#. module: dms
 #: model:ir.model,name:dms.model_dms_tag
 msgid "Document Tag"
 msgstr "Etiqueta del documento"
@@ -932,34 +876,6 @@ msgstr "Etiqueta del documento"
 #: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
 msgid "Documents"
 msgstr "Documentos"
-
-#. module: dms
-#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_directory_state
-msgid "Documents Onboarding Directory State"
-msgstr "Estado del directorio de incorporación de documentos"
-
-#. module: dms
-#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_file_state
-msgid "Documents Onboarding File State"
-msgstr "Estado de archivo de incorporación de documentos"
-
-#. module: dms
-#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_state
-msgid "Documents Onboarding State"
-msgstr "Estado de incorporación de documentos"
-
-#. module: dms
-#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_storage_state
-msgid "Documents Onboarding Storage State"
-msgstr "Estado de almacenamiento de incorporación de documentos"
-
-#. module: dms
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__done
-msgid "Done"
-msgstr "Hecho"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_file__is_lock_editor
@@ -1021,19 +937,8 @@ msgid "External"
 msgstr "Externo"
 
 #. module: dms
-#: model:ir.model,name:dms.model_dms_file
-#: model:onboarding.onboarding.step,title:dms.onboarding_step_upload_file
-msgid "File"
-msgstr "Archivo"
-
-#. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
 msgid "File Extensions"
-msgstr ""
-
-#. module: dms
-#: model:onboarding.onboarding,name:dms.onboarding_onboarding_dms_file
-msgid "File Onboarding"
 msgstr ""
 
 #. module: dms
@@ -1087,11 +992,6 @@ msgstr "Los archivos se usan para guardar el contenido directamente en Odoo."
 #: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__file
 msgid "Filestore"
 msgstr "Almacenamiento"
-
-#. module: dms
-#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_upload_file
-msgid "First File Uploaded!"
-msgstr ""
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__message_follower_ids
@@ -1348,13 +1248,6 @@ msgid "Internal"
 msgstr "Interno"
 
 #. module: dms
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
-msgid "Internal / Human Resource"
-msgstr "Interno / Recursos humanos"
-
-#. module: dms
 #. odoo-python
 #: code:addons/dms/models/dms_file.py:0
 msgid "Invalid attachments!"
@@ -1387,14 +1280,6 @@ msgstr "No es posible cambiar el almacenamiento."
 #: code:addons/dms/models/directory.py:0
 msgid "It is not possible to change to a parent with other storage."
 msgstr ""
-
-#. module: dms
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__just_done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__just_done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__just_done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__just_done
-msgid "Just done"
-msgstr "Justo ahora"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_access_group__write_uid
@@ -1584,17 +1469,6 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: dms
-#: model:ir.actions.act_window,name:dms.action_dms_directory_new
-#: model:ir.actions.act_window,name:dms.action_dms_file_new
-msgid "New Root Directory"
-msgstr "Nuevo directorio raíz"
-
-#. module: dms
-#: model:ir.actions.act_window,name:dms.action_dms_storage_new
-msgid "New Storage"
-msgstr "Nuevo almacenamiento"
-
-#. module: dms
 #: model:dms.category,name:dms.category_06_demo
 msgid "News"
 msgstr "Novedades"
@@ -1622,14 +1496,6 @@ msgstr "Tipo de siguiente actividad"
 #: code:addons/dms/models/dms_file.py:0
 msgid "No attachment was provided"
 msgstr "No se proporcionó ningún anexo"
-
-#. module: dms
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__not_done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__not_done
-#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__not_done
-msgid "Not done"
-msgstr "No hecho"
 
 #. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
@@ -1664,31 +1530,6 @@ msgstr "Número de mensajes que requieren una acción"
 #: model:ir.model.fields,help:dms.field_dms_file__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr "Número de mensajes con error de entrega"
-
-#. module: dms
-#: model:ir.model,name:dms.model_onboarding_onboarding
-msgid "Onboarding"
-msgstr ""
-
-#. module: dms
-#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_create_directory
-msgid "Onboarding Directory"
-msgstr ""
-
-#. module: dms
-#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_upload_file
-msgid "Onboarding File"
-msgstr ""
-
-#. module: dms
-#: model:ir.model,name:dms.model_onboarding_onboarding_step
-msgid "Onboarding Step"
-msgstr ""
-
-#. module: dms
-#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_document_storage
-msgid "Onboarding Storage"
-msgstr ""
 
 #. module: dms
 #. odoo-python
@@ -1900,11 +1741,6 @@ msgid "Root Directory"
 msgstr "Directorio Raíz"
 
 #. module: dms
-#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_create_directory
-msgid "Root Directory Created!"
-msgstr ""
-
-#. module: dms
 #: model:dms.tag,name:dms.tag_04_demo
 msgid "Sales"
 msgstr "Ventas"
@@ -2001,18 +1837,6 @@ msgstr ""
 "Planificado: actividades futuras."
 
 #. module: dms
-#: model:ir.model,name:dms.model_dms_storage
-#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id
-#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id
-#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id
-#: model:onboarding.onboarding.step,title:dms.onboarding_step_document_storage
-#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
-#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
-#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
-msgid "Storage"
-msgstr "Almacenamiento"
-
-#. module: dms
 #: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__is_hidden
 #: model:ir.model.fields,field_description:dms.field_dms_directory__is_hidden
 #: model:ir.model.fields,field_description:dms.field_dms_file__is_hidden
@@ -2079,13 +1903,6 @@ msgstr "Etiquetas"
 #: model_terms:ir.actions.act_window,help:dms.action_dms_tag
 msgid "Tags are used to categorize Documents."
 msgstr "Las etiquetas se usan para categorizar documentos."
-
-#. module: dms
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
-#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
-msgid "Tags..."
-msgstr "Etiquetas..."
 
 #. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
@@ -2227,16 +2044,6 @@ msgstr "Desempaquetar correos electrónicos como"
 #: code:addons/dms/static/src/js/views/file_list_renderer.xml:0
 msgid "Upload"
 msgstr "Subir"
-
-#. module: dms
-#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_upload_file
-msgid "Upload File"
-msgstr "Archivo subido"
-
-#. module: dms
-#: model:onboarding.onboarding.step,description:dms.onboarding_step_upload_file
-msgid "Upload your first File."
-msgstr "Sube tu primer archivo."
 
 #. module: dms
 #: model:dms.access.group,name:dms.access_group_03_demo
