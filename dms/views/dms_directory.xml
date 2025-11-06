@@ -193,7 +193,6 @@
         <field name="arch" type="xml">
             <kanban
                 class="mk_directory_kanban_view o_kanban_small_column o_kanban_mobile"
-                banner_route="/onboarding/document_onboarding_file"
                 highlight_color="color"
             >
                 <field name="id" />
@@ -650,78 +649,5 @@
                 files directly in Odoo.
             </p>
         </field>
-    </record>
-    <record id="view_dms_directory_new_form" model="ir.ui.view">
-        <field name="name">dms_directory.form</field>
-        <field name="model">dms.directory</field>
-        <field name="inherit_id" ref="view_dms_directory_form" />
-        <field name="mode">primary</field>
-        <field name="arch" type="xml">
-            <xpath expr="//header" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//sheet//div[hasclass('oe_button_box')]" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//sheet//group[@name='settings']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//sheet//group[@name='data']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//sheet//group[@name='data']" position="after">
-                <group>
-                    <group>
-                        <field
-                            name="is_root_directory"
-                            readonly="1"
-                            groups="!dms.group_dms_manager"
-                        />
-                        <field
-                            name="is_root_directory"
-                            groups="dms.group_dms_manager"
-                        />
-                        <field
-                            name="storage_id"
-                            options="{'no_quick_create': True}"
-                            readonly="not is_root_directory"
-                            required="is_root_directory"
-                            force_save="1"
-                        />
-                    </group>
-                    <group>
-                        <field
-                            name="category_id"
-                            placeholder="Internal / Human Resource"
-                            options="{'no_open': True, 'no_create': True}"
-                        />
-                        <field
-                            name="tag_ids"
-                            widget="many2many_tags"
-                            placeholder="Tags..."
-                            options="{'color_field': 'color', 'no_create_edit': True}"
-                        />
-                    </group>
-                </group>
-            </xpath>
-            <form position="inside">
-                <footer>
-                    <button
-                        class="btn btn-primary"
-                        type="object"
-                        string="Create"
-                        name="action_save_onboarding_directory_step"
-                    />
-                    <button special="cancel" string="Cancel" />
-                </footer>
-            </form>
-        </field>
-    </record>
-    <record id="action_dms_directory_new" model="ir.actions.act_window">
-        <field name="name">New Root Directory</field>
-        <field name="res_model">dms.directory</field>
-        <field name="view_mode">form</field>
-        <field name="target">new</field>
-        <field name="view_id" ref="view_dms_directory_new_form" />
     </record>
 </odoo>

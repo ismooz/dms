@@ -361,11 +361,6 @@ class DmsDirectory(models.Model):
         ).search_panel_select_multi_range(field_name, **kwargs)
 
     # Actions
-    def action_save_onboarding_directory_step(self):
-        self.env.user.company_id.set_onboarding_step_done(
-            "documents_onboarding_directory_state"
-        )
-
     # SearchPanel
     @api.model
     def _search_panel_directory(self, **kwargs):

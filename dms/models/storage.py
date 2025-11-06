@@ -110,11 +110,6 @@ class Storage(models.Model):
                 ]
                 files.search(domain).action_migrate()
 
-    def action_save_onboarding_storage_step(self):
-        self.env.user.company_id.set_onboarding_step_done(
-            "documents_onboarding_storage_state"
-        )
-
     # Read, View
     @api.depends("storage_directory_ids")
     def _compute_count_storage_directories(self):

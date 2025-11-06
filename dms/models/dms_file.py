@@ -266,11 +266,6 @@ class DMSFile(models.Model):
                 }
             )
 
-    def action_save_onboarding_file_step(self):
-        self.env.user.company_id.set_onboarding_step_done(
-            "documents_onboarding_file_state"
-        )
-
     def action_wizard_dms_file_move(self):
         items = self.browse(self.env.context.get("active_ids"))
         root_directories = items.mapped("root_directory_id")
